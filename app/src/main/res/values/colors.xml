@@ -5,4 +5,9 @@
     <color name="colorAccent">#FF4081</color>
     <color name="startbutton">#BC0056</color>
     <color name="endbutton">#730062</color>
+    <color name="startquestion">#0095ff</color>
+    <color name="endquestion">#cce7f9</color>
+    <color name="colorTextPrimary">#6d6d6d</color>
+    <color name="colorProgressBackgroundTint">#707070</color>
+    <color name="colorProgressTint">#dfc921</color>
 </resources>
