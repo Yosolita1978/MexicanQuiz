@@ -21,7 +21,7 @@
     <!-- Question 2 -->
     <string name="text2of10">2/10</string>
     <string name="progressBarValue2">20</string>
-    <string name="question2Text">2. Quién escribió "La muerte de Artemio Cruz"?</string>
+    <string name="question2Text">¿Quién escribió "La muerte de Artemio Cruz"?</string>
     <string name="question2Hint">Escriba su respuesta acá</string>
 
 </resources>

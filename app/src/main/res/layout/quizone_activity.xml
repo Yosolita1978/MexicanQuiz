@@ -11,27 +11,32 @@
         android:orientation="vertical"
         tools:context="com.example.android.mexicanquiz.quizOneActivity">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="205dp"
-            android:layout_weight="4"
-            android:text="@string/question1Text"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/background_dark"
-            android:background="@drawable/questiongradient"
-            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/questiongradient">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/smallwhowants"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"/>
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_weight="1"
-            android:text="@string/question1Text1"
-            android:textSize="12sp" />
+            android:layout_height="90dp"
+            android:text="@string/question1Text"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:shadowRadius="10"
+            android:textColor="@android:color/background_dark"
+            android:gravity="center"/>
+
+        </RelativeLayout>
 
         <CheckBox
             android:id="@+id/checkboxFirstOption"
@@ -96,6 +101,15 @@
                 android:layout_centerHorizontal="true"
                 android:text="@string/text1of10"
                 android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/nextButton"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/question1Text1"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/nextButton"
