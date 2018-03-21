@@ -6,16 +6,20 @@
     <string name="previousTextButton">Previous</string>
 
     <string name="question1">Question 1</string>
+    <string name="optionText">Puede escoger más de una opción</string>
 
 
     <!-- Question 1 -->
     <string name="text1of10">1/10</string>
-    <string name="question1Text">En el habla popular de México, el término "marchante(a)"?</string>
-    <string name="question1Text1">Puede escoger más de una opción</string>
-    <string name="textviewQuestion1">No tiene que ver con la actividad comercial </string>
-    <string name="imageviewQuestion1">Se aplica al vendedor </string>
-    <string name="intentQuestion1">Se aplica al comprador </string>
-    <string name="buttonQuestion1">Se aplica al impuesto de la transacción </string>
+    <string name="question1_question">En el habla popular de México, el término "marchante(a)"?</string>
+
+    <string-array name="question1_choices">
+    <item>No tiene que ver con la actividad comercial </item>
+    <item>Se aplica al vendedor </item>
+    <item>Se aplica al comprador </item>
+    <item>Se aplica al impuesto de la transacción </item>
+    </string-array>
+
     <string name="progressBarValue1">10</string>
 
     <!-- Question 2 -->
