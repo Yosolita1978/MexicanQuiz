@@ -20,12 +20,41 @@
     <item>Se aplica al impuesto de la transacción </item>
     </string-array>
 
+    <string-array name="question1_answers">
+        <item>Se aplica al vendedor </item>
+        <item>Se aplica al comprador </item>
+    </string-array>
+
     <string name="progressBarValue1">10</string>
 
     <!-- Question 2 -->
     <string name="text2of10">2/10</string>
     <string name="progressBarValue2">20</string>
-    <string name="question2Text">¿Quién escribió "La muerte de Artemio Cruz"?</string>
-    <string name="question2Hint">Escriba su respuesta acá</string>
+    <string name="question2_question">¿Quién escribió "La muerte de Artemio Cruz"?</string>
+    <string name="question2_hint">Escriba su respuesta acá</string>
+    <string name="question2_answer">Carlos Fuentes</string>
+
+    <!-- Question 3 -->
+    <string name="text3of10">3/10</string>
+    <string name="progressBarValue3">30</string>
+    <string name="question3_question">¿Las pirámides del Sol y la Luna se encuentran en Teotihuacan?</string>
+    <string-array name="question3_choices">
+        <item>Cierto</item>
+        <item>Falso</item>
+    </string-array>
+    <string name="question3_answer">Cierto</string>
+
+    <!-- Question 4 -->
+    <string name="text4of10">1/10</string>
+    <string name="progressBarValue4">40</string>
+    <string name="question4_question">¿ Al lugar mítico de donde partieron los mexicas e iniciaron su migración se le conoce cómo?</string>
+    <string-array name="question4_choices">
+        <item>Aztlán </item>
+        <item>Tula </item>
+        <item>Mictlán</item>
+        <item>Tenochtitlán </item>
+    </string-array>
+    <string name="question4_answer">Aztlán</string>
+
 
 </resources>
