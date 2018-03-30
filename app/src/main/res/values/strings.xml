@@ -13,11 +13,18 @@
     <string name="text1of10">1/10</string>
     <string name="question1_question">En el habla popular de México, el término "marchante(a)"?</string>
 
+    <!-- Question 1 xml -->
+
+    <string name="question1_choice1">No tiene que ver con la actividad comercial </string>
+    <string name="question1_choice2">Se aplica al vendedor </string>
+    <string name="question1_choice3">Se aplica al comprador </string>
+    <string name="question1_choice4">Se aplica al impuesto de la transacción </string>
+
     <string-array name="question1_choices">
-    <item>No tiene que ver con la actividad comercial </item>
-    <item>Se aplica al vendedor </item>
-    <item>Se aplica al comprador </item>
-    <item>Se aplica al impuesto de la transacción </item>
+    <item>@string/question1_choice1 </item>
+    <item>@string/question1_choice2 </item>
+    <item>@string/question1_choice3</item>
+    <item>@string/question1_choice4</item>
     </string-array>
 
     <string-array name="question1_answers">
@@ -26,6 +33,8 @@
     </string-array>
 
     <string name="progressBarValue1">10</string>
+
+
 
     <!-- Question 2 -->
     <string name="text2of10">2/10</string>

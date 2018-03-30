@@ -27,7 +27,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:text="@string/question1Text"
+            android:text="@string/question1_question"
             android:textSize="25sp"
             android:textStyle="bold"
             android:background="@android:color/white"
@@ -48,7 +48,7 @@
             android:layout_weight="1"
             android:paddingLeft="5dp"
             android:paddingStart="5dp"
-            android:text="@string/textviewQuestion1"
+            android:text="@string/question1_choice1"
             android:textSize="20sp" />
 
         <CheckBox
@@ -61,7 +61,7 @@
             android:layout_weight="1"
             android:paddingLeft="5dp"
             android:paddingStart="5dp"
-            android:text="@string/imageviewQuestion1"
+            android:text="@string/question1_choice2"
             android:textSize="20sp" />
 
         <CheckBox
@@ -74,7 +74,7 @@
             android:layout_weight="1"
             android:paddingLeft="5dp"
             android:paddingStart="5dp"
-            android:text="@string/intentQuestion1"
+            android:text="@string/question1_choice3"
             android:textSize="20sp" />
 
         <CheckBox
@@ -87,7 +87,7 @@
             android:layout_weight="1"
             android:paddingLeft="5dp"
             android:paddingStart="5dp"
-            android:text="@string/buttonQuestion1"
+            android:text="@string/question1_choice4"
             android:textSize="20sp" />
 
         <RelativeLayout
@@ -108,7 +108,7 @@
                 android:layout_alignBottom="@+id/nextButton"
                 android:layout_marginLeft="16dp"
                 android:layout_marginStart="16dp"
-                android:text="@string/question1Text1"
+                android:text="@string/optionText"
                 android:textSize="12sp" />
 
             <Button
