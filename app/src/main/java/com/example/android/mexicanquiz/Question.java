@@ -27,8 +27,8 @@ public class Question {
         return mQuestion;
     }
 
-    public String getChoice(int i) {
-        return mChoices[i];
+    public String[] getChoices() {
+        return mChoices;
     }
 
     public boolean isCorrect(String answer) {
@@ -45,6 +45,18 @@ public class Question {
             }
         }
         return true;
+    }
+
+    public int getAnswerCount(){
+        return mAnswers.length;
+    }
+
+    public Class getActivity(){
+        if(getAnswerCount() > 1){
+            return MultipleAnswersActivity.class;
+        } else{
+            return WrittenAnswerActivity.class;
+        }
     }
 
 

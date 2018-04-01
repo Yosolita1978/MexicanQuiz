@@ -11,7 +11,7 @@ import android.widget.EditText;
 
 import com.example.android.mexicanquiz.R;
 
-public class quizTwoActivity extends AppCompatActivity {
+public class WrittenAnswerActivity extends AppCompatActivity {
 
     public static final String MyPREFERENCES = "MyPrefs" ;
 
@@ -23,8 +23,8 @@ public class quizTwoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Set the content of the activity to use the quizone_activity.xml layout file
-        setContentView(R.layout.quiztwo_activity);
+        // Set the content of the activity to use the multiple_answers_activity.xml layout file
+        setContentView(R.layout.written_answer_activity);
         checkPreferences();
 
 
@@ -39,7 +39,7 @@ public class quizTwoActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 /* Call the second question of the Quiz */
-                Intent quiz1Intent = new Intent(quizTwoActivity.this, quizOneActivity.class);
+                Intent quiz1Intent = new Intent(WrittenAnswerActivity.this, MultipleAnswersActivity.class);
                 startActivity(quiz1Intent);
 
                 //Save Preferences before going to the next Question
@@ -53,7 +53,7 @@ public class quizTwoActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 /* Call the second question of the Quiz */
-                Intent quiz2Intent = new Intent(quizTwoActivity.this, quizTwoActivity.class);
+                Intent quiz2Intent = new Intent(WrittenAnswerActivity.this, WrittenAnswerActivity.class);
                 startActivity(quiz2Intent);
 
                 //Save Preferences before going to the next Question

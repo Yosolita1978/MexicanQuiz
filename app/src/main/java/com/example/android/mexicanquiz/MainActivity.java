@@ -21,22 +21,19 @@ public class MainActivity extends AppCompatActivity {
 
         Button startButton = (Button) findViewById(R.id.button_start);
 
+        final Context context = this;
+
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                // Create Preferences file and clean it
-                sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedpreferences.edit();
-                editor.clear();
-                editor.apply();
+            // Get Questionary and Next Question
+            Question firstQuestion = Questionary.getQuestionary(context).getCurrentQuestion();
+            Intent quizIntent = new Intent(MainActivity.this, firstQuestion.getActivity());
+            startActivity(quizIntent);
 
-                // Call the beginning of the quiz.
-                Intent quizIntent = new Intent(MainActivity.this, quizOneActivity.class);
-                startActivity(quizIntent);
-
-                //Finish View once the Question is called.
-                finish();
+            //Finish View once the Question is called.
+            finish();
             }
         });
     }

@@ -16,8 +16,8 @@
     <!-- Question 1 xml -->
 
     <string name="question1_choice1">No tiene que ver con la actividad comercial </string>
-    <string name="question1_choice2">Se aplica al vendedor </string>
-    <string name="question1_choice3">Se aplica al comprador </string>
+    <string name="question1_choice2">No quiero nada </string>
+    <string name="question1_choice3">Esto es una prueba </string>
     <string name="question1_choice4">Se aplica al impuesto de la transacción </string>
 
     <string-array name="question1_choices">

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -9,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context="com.example.android.mexicanquiz.quizOneActivity">
+        tools:context="com.example.android.mexicanquiz.MultipleAnswersActivity">
 
 
         <RelativeLayout
@@ -25,9 +26,10 @@
             android:layout_marginBottom="15dp"/>
 
         <TextView
+            android:id="@+id/questionTextView"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:text="@string/question1_question"
+            tools:text="@string/question1_question"
             android:textSize="25sp"
             android:textStyle="bold"
             android:background="@android:color/white"
@@ -48,7 +50,7 @@
             android:layout_weight="1"
             android:paddingLeft="5dp"
             android:paddingStart="5dp"
-            android:text="@string/question1_choice1"
+            tools:text="@string/question1_choice1"
             android:textSize="20sp" />
 
         <CheckBox
@@ -61,7 +63,7 @@
             android:layout_weight="1"
             android:paddingLeft="5dp"
             android:paddingStart="5dp"
-            android:text="@string/question1_choice2"
+            tools:text="@string/question1_choice2"
             android:textSize="20sp" />
 
         <CheckBox
@@ -74,7 +76,7 @@
             android:layout_weight="1"
             android:paddingLeft="5dp"
             android:paddingStart="5dp"
-            android:text="@string/question1_choice3"
+            tools:text="@string/question1_choice3"
             android:textSize="20sp" />
 
         <CheckBox
@@ -87,7 +89,7 @@
             android:layout_weight="1"
             android:paddingLeft="5dp"
             android:paddingStart="5dp"
-            android:text="@string/question1_choice4"
+            tools:text="@string/question1_choice4"
             android:textSize="20sp" />
 
         <RelativeLayout

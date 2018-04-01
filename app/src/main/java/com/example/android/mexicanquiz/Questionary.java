@@ -58,6 +58,15 @@ public class Questionary {
         }
     }
 
+    public void checkAnswer(String[] answers){
+        Question question = getCurrentQuestion();
+        if(question.isCorrect(answers)){
+            mNumberCorrectAnswers += 1;
+        }
+    }
+
+
+
 
 
 
