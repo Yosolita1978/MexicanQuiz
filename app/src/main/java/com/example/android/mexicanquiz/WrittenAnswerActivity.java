@@ -8,16 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.android.mexicanquiz.R;
 
 public class WrittenAnswerActivity extends AppCompatActivity {
-
-    public static final String MyPREFERENCES = "MyPrefs" ;
-
-    SharedPreferences sharedpreferences;
-
-    public static final String quest2ans1 = "quest2ans1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,72 +20,37 @@ public class WrittenAnswerActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the multiple_answers_activity.xml layout file
         setContentView(R.layout.written_answer_activity);
-        checkPreferences();
+        final Questionary questionary = Questionary.getQuestionary(this);
+        Question currentQuestion = questionary.getCurrentQuestion();
+
 
 
         // Create an event listener for the next button
         Button nextButton = (Button) findViewById(R.id.nextButton);
 
-        // Create an event listener for the previous button
-        Button previousButton = (Button) findViewById(R.id.previousButton);
-
-        previousButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                /* Call the second question of the Quiz */
-                Intent quiz1Intent = new Intent(WrittenAnswerActivity.this, MultipleAnswersActivity.class);
-                startActivity(quiz1Intent);
-
-                //Save Preferences before going to the next Question
-                savePreferences();
-                finish();
-            }
-        });
-
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                /* Call the second question of the Quiz */
-                Intent quiz2Intent = new Intent(WrittenAnswerActivity.this, WrittenAnswerActivity.class);
-                startActivity(quiz2Intent);
+                /* Get the Answers from the user */
 
-                //Save Preferences before going to the next Question
-                savePreferences();
-                finish();
+                EditText userAnswers = (EditText)findViewById(R.id.user_text_input);
+                String userAnswer =  userAnswers.getText().toString();
+
+                ////Check the Answer before going to the next Question
+                questionary.checkAnswer(userAnswer);
+                Question nextQuestion = questionary.getNextQuestion();
+                ////TO-DO The next intent - remember that you need to update the getNextActivity method in the Question too
+
             }
         });
     }
 
-    private void checkPreferences() {
-
-        EditText ideEditText = (EditText) findViewById(R.id.name_text_input);
-
-        // Open Preferences file
-        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedpreferences.edit();
-
-        //Get value from Preferences if it exist
-        String questAns1 = sharedpreferences.getString(quest2ans1,"");
-        ideEditText.setText(questAns1);
-
-        editor.apply();
-    }
-
-    private void savePreferences() {
-
-        EditText ideEditText = (EditText) findViewById(R.id.name_text_input);
-        String cleanIdeEditText = ideEditText.getText().toString().trim();
-
-        // Open Preferences file
-        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedpreferences.edit();
-
-        //Save clean value
-        editor.putString(quest2ans1 ,cleanIdeEditText);
-
-        //Apply changes to the sharedPreferences
-        editor.apply();
+    /**
+     * Displays the given Question.
+     */
+    public void displayQuestion(String question) {
+        TextView questionView = (TextView) findViewById(R.id.questionTextView);
+        questionView.setText(question);
     }
 }
