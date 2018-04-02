@@ -16,8 +16,8 @@
     <!-- Question 1 xml -->
 
     <string name="question1_choice1">No tiene que ver con la actividad comercial </string>
-    <string name="question1_choice2">No quiero nada </string>
-    <string name="question1_choice3">Esto es una prueba </string>
+    <string name="question1_choice2">Se aplica al vendedor  </string>
+    <string name="question1_choice3">Se aplica al comprador </string>
     <string name="question1_choice4">Se aplica al impuesto de la transacción </string>
 
     <string-array name="question1_choices">
@@ -47,22 +47,33 @@
     <string name="text3of10">3/10</string>
     <string name="progressBarValue3">30</string>
     <string name="question3_question">¿Las pirámides del Sol y la Luna se encuentran en Teotihuacan?</string>
+    <string name="question3_true">Verdadero</string>
+    <string name="question3_false">Falso</string>
+
     <string-array name="question3_choices">
-        <item>Cierto</item>
-        <item>Falso</item>
+        <item>@string/question3_true</item>
+        <item>@string/question3_false</item>
     </string-array>
-    <string name="question3_answer">Cierto</string>
+
+    <string name="question3_answer">Verdadero</string>
 
     <!-- Question 4 -->
     <string name="text4of10">1/10</string>
     <string name="progressBarValue4">40</string>
     <string name="question4_question">¿ Al lugar mítico de donde partieron los mexicas e iniciaron su migración se le conoce cómo?</string>
+    <string name="question4_choice1">Aztlán </string>
+    <string name="question4_choice2">Tula </string>
+    <string name="question4_choice3">Mictlán </string>
+    <string name="question4_choice4">Tenochtitlán </string>
+
+
     <string-array name="question4_choices">
-        <item>Aztlán </item>
-        <item>Tula </item>
-        <item>Mictlán</item>
-        <item>Tenochtitlán </item>
+        <item>@string/question4_choice1 </item>
+        <item>@string/question4_choice2 </item>
+        <item>@string/question4_choice3 </item>
+        <item>@string/question4_choice4 </item>
     </string-array>
+
     <string name="question4_answer">Aztlán</string>
 
 

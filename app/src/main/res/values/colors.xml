@@ -3,6 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="unselected">#b8c2d3</color>
     <color name="startbutton">#BC0056</color>
     <color name="endbutton">#730062</color>
     <color name="startquestion">#0095ff</color>

@@ -22,7 +22,7 @@ public class WrittenAnswerActivity extends AppCompatActivity {
         setContentView(R.layout.written_answer_activity);
         final Questionary questionary = Questionary.getQuestionary(this);
         Question currentQuestion = questionary.getCurrentQuestion();
-
+        displayQuestion(currentQuestion.getQuestion());
 
 
         // Create an event listener for the next button
@@ -40,7 +40,9 @@ public class WrittenAnswerActivity extends AppCompatActivity {
                 ////Check the Answer before going to the next Question
                 questionary.checkAnswer(userAnswer);
                 Question nextQuestion = questionary.getNextQuestion();
-                ////TO-DO The next intent - remember that you need to update the getNextActivity method in the Question too
+                Intent nextIntent = new Intent(WrittenAnswerActivity.this, nextQuestion.getActivity());
+                startActivity(nextIntent);
+                finish();
 
             }
         });

@@ -54,6 +54,8 @@ public class Question {
     public Class getActivity(){
         if(getAnswerCount() > 1){
             return MultipleAnswersActivity.class;
+        } else if(getChoices().length == 2){
+            return TrueFalseActivity.class;
         } else{
             return WrittenAnswerActivity.class;
         }

@@ -20,6 +20,8 @@
             android:label="@string/quiz"/>
         <activity android:name=".WrittenAnswerActivity"
             android:label="@string/quiz"/>
+        <activity android:name=".TrueFalseActivity"
+            android:label="@string/quiz"/>
     </application>
 
 </manifest>
