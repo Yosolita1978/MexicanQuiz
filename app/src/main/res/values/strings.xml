@@ -58,7 +58,7 @@
     <string name="question3_answer">Verdadero</string>
 
     <!-- Question 4 -->
-    <string name="text4of10">1/10</string>
+    <string name="text4of10">4/10</string>
     <string name="progressBarValue4">40</string>
     <string name="question4_question">¿ Al lugar mítico de donde partieron los mexicas e iniciaron su migración se le conoce cómo?</string>
     <string name="question4_choice1">Aztlán </string>

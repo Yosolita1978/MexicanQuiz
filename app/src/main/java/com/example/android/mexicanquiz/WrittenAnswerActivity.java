@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.android.mexicanquiz.R;
@@ -23,6 +24,16 @@ public class WrittenAnswerActivity extends AppCompatActivity {
         final Questionary questionary = Questionary.getQuestionary(this);
         Question currentQuestion = questionary.getCurrentQuestion();
         displayQuestion(currentQuestion.getQuestion());
+
+        //Set up the progress Bar progress
+        ProgressBar quizProgressBar=(ProgressBar)findViewById(R.id.determinateBar);
+        quizProgressBar.setProgress(questionary.getProgress());
+
+        //Set up the number of question and the current question
+        TextView quizProgress=(TextView) findViewById(R.id.currentquestion_view);
+        int totalQuestions = questionary.getTotalQuestions();
+        int currentNumberQuestion = questionary.getNumberCurrentQuestion();
+        quizProgress.setText(currentNumberQuestion + "/" + totalQuestions);
 
 
         // Create an event listener for the next button

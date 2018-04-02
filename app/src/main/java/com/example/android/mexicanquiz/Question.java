@@ -56,6 +56,8 @@ public class Question {
             return MultipleAnswersActivity.class;
         } else if(getChoices().length == 2){
             return TrueFalseActivity.class;
+        } else if(getChoices().length > 2){
+            return RadioAnswerActivity.class;
         } else{
             return WrittenAnswerActivity.class;
         }

@@ -72,6 +72,21 @@ public class Questionary {
         }
     }
 
+    public int getProgress(){
+        int totalQuestions = mQuestions.length;
+        int progress = (mCurrentQuestionIndex + 1) * 100 / totalQuestions;
+        return  progress;
+    }
+
+    public int getNumberCurrentQuestion(){
+        int currentQuestion = (mCurrentQuestionIndex + 1);
+        return currentQuestion;
+    }
+
+    public int getTotalQuestions(){
+        return mQuestions.length;
+    }
+
 
 
 

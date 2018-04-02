@@ -66,11 +66,12 @@
 
 
             <TextView
+                android:id="@+id/currentquestion_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:text="@string/text2of10"
+                tools:text="@string/text2of10"
                 android:textSize="15sp" />
 
             <Button
@@ -96,7 +97,6 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_weight="0"
-            android:progress="@string/progressBarValue2"
             android:progressBackgroundTint="@color/colorProgressBackgroundTint"
             android:progressTint="@color/colorProgressTint" />
 

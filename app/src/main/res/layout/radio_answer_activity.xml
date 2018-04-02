@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="@color/graylight">
 
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context="com.example.android.mexicanquiz.WrittenAnswerActivity">
+        tools:context="com.example.android.mexicanquiz.MultipleAnswersActivity">
+
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -27,7 +29,7 @@
                 android:id="@+id/questionTextView"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
-                tools:text="@string/question3_question"
+                tools:text="@string/question4_question"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 android:background="@android:color/white"
@@ -38,53 +40,67 @@
 
         </RelativeLayout>
 
-
-        <LinearLayout
+        <RadioGroup
+            android:id="@+id/radiobutton_options"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_weight="1">
 
-            <Button
-                android:id="@+id/true_button"
+            <RadioButton
+                android:id="@+id/choices1_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="@string/question3_true"
-                android:layout_marginTop="46dp"
-                android:textSize="25sp"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="36dp"
+                tools:text="@string/question4_choice1"
+                android:textSize="25sp" />
 
-            <Button
-                android:id="@+id/false_button"
+            <RadioButton
+                android:id="@+id/choices2_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="@string/question3_false"
-                android:layout_marginTop="16dp"
-                android:textSize="25sp"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                tools:text="@string/question4_choice2"
+                android:textSize="25sp" />
 
+            <RadioButton
+                android:id="@+id/choices3_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                tools:text="@string/question4_choice3"
+                android:textSize="25sp" />
 
-        </LinearLayout>
+            <RadioButton
+                android:id="@+id/choices4_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                tools:text="@string/question4_choice4"
+                android:textSize="25sp" />
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3" />
+        </RadioGroup>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0">
 
-
             <TextView
                 android:id="@+id/currentquestion_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                tools:text="@string/text3of10"
+                tools:text="@string/text4of10"
                 android:textSize="15sp" />
+
 
             <Button
                 android:id="@+id/nextButton"

@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -29,6 +30,16 @@ public class MultipleAnswersActivity extends AppCompatActivity {
         Question currentQuestion = questionary.getCurrentQuestion();
         displayQuestion(currentQuestion.getQuestion());
         displayChoices(currentQuestion.getChoices());
+
+        //Set up the progress Bar progress
+        ProgressBar quizProgressBar=(ProgressBar)findViewById(R.id.determinateBar);
+        quizProgressBar.setProgress(questionary.getProgress());
+
+        //Set up the number of question and the current question
+        TextView quizProgress=(TextView) findViewById(R.id.currentquestion_view);
+        int totalQuestions = questionary.getTotalQuestions();
+        int currentNumberQuestion = questionary.getNumberCurrentQuestion();
+        quizProgress.setText(currentNumberQuestion + "/" + totalQuestions);
 
         Button nextButton = (Button) findViewById(R.id.nextButton);
         nextButton.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +84,5 @@ public class MultipleAnswersActivity extends AppCompatActivity {
             answerView.setText(choices[i]);
         }
     }
-
 
 }
