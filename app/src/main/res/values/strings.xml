@@ -76,5 +76,109 @@
 
     <string name="question4_answer">Aztlán</string>
 
+    <!-- Question 5 -->
+    <string name="text5of10">5/10</string>
+    <string name="progressBarValue5">50</string>
+    <string name="question5_question">¿ Las cabezas colosales son creaciones de la cultura: ?</string>
+    <string name="question5_choice1">Mexica </string>
+    <string name="question5_choice2">Mixteca </string>
+    <string name="question5_choice3">Olmeca </string>
+    <string name="question5_choice4">Tolteca </string>
+
+
+    <string-array name="question5_choices">
+        <item>@string/question5_choice1 </item>
+        <item>@string/question5_choice2 </item>
+        <item>@string/question5_choice3 </item>
+        <item>@string/question5_choice4 </item>
+    </string-array>
+
+    <string name="question5_answer">Olmeca </string>
+
+    <!-- Question 6 -->
+    <string name="text6of10">6/10</string>
+    <string name="progressBarValue6">60</string>
+    <string name="question6_question">Escriba el nombre del último emperador mexica </string>
+    <string name="question6_hint">Escriba su respuesta acá</string>
+    <string name="question6_answer">Moctezuma</string>
+
+    <!-- Question 7 -->
+    <string name="text7of10">7/10</string>
+    <string name="progressBarValue7">70</string>
+    <string name="question7_question">¿ Nombre de la poetisa más importante de la época novohispana: ?</string>
+    <string name="question7_choice1">Sor Juana Inés de la Cruz </string>
+    <string name="question7_choice2">María Anna Agueda de San Ignacio </string>
+    <string name="question7_choice3">La Malinche </string>
+    <string name="question7_choice4">Tonantzin </string>
+
+
+    <string-array name="question7_choices">
+        <item>@string/question7_choice1 </item>
+        <item>@string/question7_choice2 </item>
+        <item>@string/question7_choice3 </item>
+        <item>@string/question7_choice4 </item>
+    </string-array>
+
+    <string name="question7_answer">Sor Juana Inés de la Cruz  </string>
+
+    <!-- Question 8 -->
+    <string name="tex8of10">8/10</string>
+    <string name="question8_question">¿ El Porfiriato se conoce como una época de extensión de:?</string>
+
+    <!-- Question 8 xml -->
+
+    <string name="question8_choice1">Las vías férreas </string>
+    <string name="question8_choice2">El ejido  </string>
+    <string name="question8_choice3">La desigualdad </string>
+    <string name="question8_choice4">La radio </string>
+
+    <string-array name="question8_choices">
+        <item>@string/question8_choice1 </item>
+        <item>@string/question8_choice2 </item>
+        <item>@string/question8_choice3</item>
+        <item>@string/question8_choice4</item>
+    </string-array>
+
+    <string-array name="question8_answers">
+        <item>Las vías férreas </item>
+        <item>La desigualdad </item>
+    </string-array>
+
+    <string name="progressBarValue8">80</string>
+
+    <!-- Question 9 -->
+    <string name="text9of10">9/10</string>
+    <string name="progressBarValue9">90</string>
+    <string name="question9_question">¿ El lema “Sufragio efectivo, no reelección” fue la bandera política de Benito Juárez ?</string>
+    <string name="question9_choice1">Verdadero </string>
+    <string name="question9_choice2">Falso </string>
+
+    <string-array name="question9_choices">
+        <item>@string/question9_choice1 </item>
+        <item>@string/question9_choice2 </item>
+    </string-array>
+
+    <string name="question9_answer">Falso </string>
+
+    <!-- Question 10 -->
+    <string name="text10of10">10/10</string>
+    <string name="progressBarValue10">100</string>
+    <string name="question10_question">¿ México es importante exportador de ?</string>
+    <string name="question10_choice1">Plata, oro y papel </string>
+    <string name="question10_choice2">Textiles, zapatos y juguetes </string>
+    <string name="question10_choice3">Aceite crudo de petróleo, autopartes y productos de cobre </string>
+    <string name="question10_choice4">Gasolina, gas butano y productos agrícolas </string>
+
+
+    <string-array name="question10_choices">
+        <item>@string/question10_choice1 </item>
+        <item>@string/question10_choice2 </item>
+        <item>@string/question10_choice3 </item>
+        <item>@string/question10_choice4 </item>
+    </string-array>
+
+    <string name="question10_answer">Aceite crudo de petróleo, autopartes y productos de cobre </string>
+
+
 
 </resources>

@@ -2,14 +2,14 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="unselected">#b8c2d3</color>
+    <color name="colorAccent">#fa9b1e</color>
+    <color name="unselected">#5f47cf</color>
     <color name="startbutton">#BC0056</color>
     <color name="endbutton">#730062</color>
     <color name="startquestion">#0095ff</color>
     <color name="endquestion">#cce7f9</color>
     <color name="colorTextPrimary">#6d6d6d</color>
-    <color name="colorProgressBackgroundTint">#000000</color>
-    <color name="colorProgressTint">#dfc921</color>
+    <color name="colorProgressBackgroundTint">#001e46</color>
+    <color name="colorProgressTint">#fa9b1e</color>
     <color name="graylight">#fafafa</color>
 </resources>
