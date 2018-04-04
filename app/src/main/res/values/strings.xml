@@ -179,6 +179,10 @@
 
     <string name="question10_answer">Aceite crudo de petróleo, autopartes y productos de cobre </string>
 
+    <string name="final_text_won">Usuario, hermano, YA eres Mexicano!
+    </string>
 
+    <string name="final_text_lost">Lástima Margarito. Sigues siendo extranjero.
+    </string>
 
 </resources>

@@ -81,7 +81,12 @@ public class TrueFalseActivity extends AppCompatActivity {
                 ////Check the Answer before going to the next Question
                 questionary.checkAnswer(userAnswer);
                 Question nextQuestion = questionary.getNextQuestion();
-                Intent nextIntent = new Intent(TrueFalseActivity.this, nextQuestion.getActivity());
+                Intent nextIntent;
+                if(nextQuestion == null){
+                    nextIntent = new Intent(TrueFalseActivity.this, FinalActivity.class);
+                } else {
+                    nextIntent = new Intent(TrueFalseActivity.this, nextQuestion.getActivity());
+                }
                 startActivity(nextIntent);
 
                 finish();

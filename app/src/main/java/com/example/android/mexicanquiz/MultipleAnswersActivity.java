@@ -59,7 +59,12 @@ public class MultipleAnswersActivity extends AppCompatActivity {
                 //Check the Answer before going to the next Question
                 questionary.checkAnswer(userAnswers.toArray(new String[0]));
                 Question nextQuestion = questionary.getNextQuestion();
-                Intent nextIntent = new Intent(MultipleAnswersActivity.this, nextQuestion.getActivity());
+                Intent nextIntent;
+                if(nextQuestion == null){
+                    nextIntent = new Intent(MultipleAnswersActivity.this, FinalActivity.class);
+                } else {
+                    nextIntent = new Intent(MultipleAnswersActivity.this, nextQuestion.getActivity());
+                }
                 startActivity(nextIntent);
 
                 finish();

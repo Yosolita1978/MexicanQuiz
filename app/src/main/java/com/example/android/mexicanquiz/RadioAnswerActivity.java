@@ -57,7 +57,12 @@ public class RadioAnswerActivity extends AppCompatActivity {
                 //Check the Answer before going to the next Question
                 questionary.checkAnswer(userAnswer.toArray(new String[0]));
                 Question nextQuestion = questionary.getNextQuestion();
-                Intent nextIntent = new Intent(RadioAnswerActivity.this, nextQuestion.getActivity());
+                Intent nextIntent;
+                if(nextQuestion == null){
+                    nextIntent = new Intent(RadioAnswerActivity.this, FinalActivity.class);
+                } else {
+                    nextIntent = new Intent(RadioAnswerActivity.this, nextQuestion.getActivity());
+                }
                 startActivity(nextIntent);
                 finish();
             }

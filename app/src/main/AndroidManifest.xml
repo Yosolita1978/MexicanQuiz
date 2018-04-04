@@ -24,6 +24,8 @@
             android:label="@string/quiz"/>
         <activity android:name=".RadioAnswerActivity"
             android:label="@string/quiz"/>
+        <activity android:name=".FinalActivity"
+            android:label="@string/quiz"/>
 
     </application>
 
