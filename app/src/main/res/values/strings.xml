@@ -100,7 +100,7 @@
     <string name="progressBarValue6">60</string>
     <string name="question6_question">Escriba el nombre del último emperador mexica </string>
     <string name="question6_hint">Escriba su respuesta acá</string>
-    <string name="question6_answer">Moctezuma</string>
+    <string name="question6_answer">Cuauhtémoc</string>
 
     <!-- Question 7 -->
     <string name="text7of10">7/10</string>
