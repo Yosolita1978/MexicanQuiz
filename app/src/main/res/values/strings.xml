@@ -28,8 +28,8 @@
     </string-array>
 
     <string-array name="question1_answers">
-        <item>Se aplica al vendedor </item>
-        <item>Se aplica al comprador </item>
+        <item>@string/question1_choice2</item>
+        <item>@string/question1_choice3</item>
     </string-array>
 
     <string name="progressBarValue1">10</string>
@@ -55,7 +55,7 @@
         <item>@string/question3_false</item>
     </string-array>
 
-    <string name="question3_answer">Verdadero</string>
+    <string name="question3_answer">@string/question3_true</string>
 
     <!-- Question 4 -->
     <string name="text4of10">4/10</string>
@@ -74,7 +74,7 @@
         <item>@string/question4_choice4 </item>
     </string-array>
 
-    <string name="question4_answer">Aztlán</string>
+    <string name="question4_answer">@string/question4_choice1</string>
 
     <!-- Question 5 -->
     <string name="text5of10">5/10</string>
@@ -93,7 +93,7 @@
         <item>@string/question5_choice4 </item>
     </string-array>
 
-    <string name="question5_answer">Olmeca </string>
+    <string name="question5_answer">@string/question5_choice3</string>
 
     <!-- Question 6 -->
     <string name="text6of10">6/10</string>
@@ -119,7 +119,7 @@
         <item>@string/question7_choice4 </item>
     </string-array>
 
-    <string name="question7_answer">Sor Juana Inés de la Cruz  </string>
+    <string name="question7_answer">@string/question7_choice1</string>
 
     <!-- Question 8 -->
     <string name="tex8of10">8/10</string>
@@ -140,8 +140,8 @@
     </string-array>
 
     <string-array name="question8_answers">
-        <item>Las vías férreas </item>
-        <item>La desigualdad </item>
+        <item>@string/question8_choice1</item>
+        <item>@string/question8_choice3</item>
     </string-array>
 
     <string name="progressBarValue8">80</string>
@@ -158,7 +158,7 @@
         <item>@string/question9_choice2 </item>
     </string-array>
 
-    <string name="question9_answer">Falso </string>
+    <string name="question9_answer">@string/question9_choice2</string>
 
     <!-- Question 10 -->
     <string name="text10of10">10/10</string>
@@ -177,12 +177,15 @@
         <item>@string/question10_choice4 </item>
     </string-array>
 
-    <string name="question10_answer">Aceite crudo de petróleo, autopartes y productos de cobre </string>
+    <string name="question10_answer">@string/question10_choice3</string>
 
     <string name="final_text_won">Usuario, hermano, YA eres Mexicano!
     </string>
 
     <string name="final_text_lost">Lástima Margarito. Sigues siendo extranjero.
+    </string>
+
+    <string name="score_text"> Tuviste XXX de XXX respuestas acertadas
     </string>
 
 </resources>

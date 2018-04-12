@@ -1,5 +1,7 @@
 package com.example.android.mexicanquiz;
 
+import java.text.Normalizer;
+
 /**
  * Created by cristina on 3/20/18.
  */
@@ -21,6 +23,9 @@ public class Question {
         this.mQuestion = question;
         this.mChoices = choices;
         this.mAnswers = answers;
+        for(int i = 0; i < mAnswers.length; i++){
+            mAnswers[i] = Normalizer.normalize(mAnswers[i], Normalizer.Form.NFC);
+        }
     }
 
     public String getQuestion() {
@@ -32,15 +37,18 @@ public class Question {
     }
 
     public boolean isCorrect(String answer) {
+        answer = Normalizer.normalize(answer, Normalizer.Form.NFC);
         return mAnswers[0].equals(answer);
     }
 
     public boolean isCorrect(String[] answers){
+        String answer;
         if(mAnswers.length != answers.length){
             return false;
         }
         for(int i = 0; i < answers.length; i++){
-            if(!answers[i].equals(mAnswers[i])){
+            answer = Normalizer.normalize(answers[i], Normalizer.Form.NFC);
+            if(!answer.equals(mAnswers[i])){
                 return false;
             }
         }

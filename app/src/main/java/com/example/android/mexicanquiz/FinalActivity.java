@@ -25,6 +25,12 @@ public class FinalActivity extends AppCompatActivity {
             finalText.setText(R.string.final_text_lost);
         }
 
+        //Set up the number of question and the current question
+        TextView finalProgress=(TextView) findViewById(R.id.score_text_view);
+        int totalQuestions = questionary.getTotalQuestions();
+        int correctAnswers = questionary.getTotalCorrectAnswers();
+        finalProgress.setText("Tuviste " + correctAnswers + " respuestas acertadas de un total de " + totalQuestions + " preguntas.");
+
         Button startAgainButton = (Button) findViewById(R.id.button_start_again);
         startAgainButton.setOnClickListener(new View.OnClickListener() {
             @Override

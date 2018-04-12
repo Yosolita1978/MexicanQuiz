@@ -117,6 +117,10 @@ public class Questionary {
         return mQuestions.length;
     }
 
+    public int getTotalCorrectAnswers (){
+        return mNumberCorrectAnswers;
+    }
+
     public boolean hasPassed(){
         int totalQuestions = mQuestions.length;
         int totalCorrectAnswers = mNumberCorrectAnswers;
