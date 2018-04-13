@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.mexicanquiz">
+    package="com.yosola.android.mexicanquiz">
 
     <application
         android:allowBackup="true"
@@ -9,22 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.yosola.android.mexicanquiz.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MultipleAnswersActivity"
+        <activity android:name="com.yosola.android.mexicanquiz.MultipleAnswersActivity"
             android:label="@string/quiz"/>
-        <activity android:name=".WrittenAnswerActivity"
+        <activity android:name="com.yosola.android.mexicanquiz.WrittenAnswerActivity"
             android:label="@string/quiz"/>
-        <activity android:name=".TrueFalseActivity"
+        <activity android:name="com.yosola.android.mexicanquiz.TrueFalseActivity"
             android:label="@string/quiz"/>
-        <activity android:name=".RadioAnswerActivity"
+        <activity android:name="com.yosola.android.mexicanquiz.RadioAnswerActivity"
             android:label="@string/quiz"/>
-        <activity android:name=".FinalActivity"
+        <activity android:name="com.yosola.android.mexicanquiz.FinalActivity"
             android:label="@string/quiz"/>
 
     </application>

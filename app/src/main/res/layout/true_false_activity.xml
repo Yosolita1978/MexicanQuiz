@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context="com.example.android.mexicanquiz.WrittenAnswerActivity">
+        tools:context="com.yosola.android.mexicanquiz.WrittenAnswerActivity">
 
         <RelativeLayout
             android:layout_width="wrap_content"

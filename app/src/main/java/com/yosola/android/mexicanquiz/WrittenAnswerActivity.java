@@ -1,34 +1,25 @@
-package com.example.android.mexicanquiz;
+package com.yosola.android.mexicanquiz;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
-/**
- * Created by cristina on 4/2/18.
- */
-
-public class RadioAnswerActivity extends AppCompatActivity {
+public class WrittenAnswerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Set the content of the activity to use the multiple_answers_activity.xml layout file
-        setContentView(R.layout.radio_answer_activity);
-
+        setContentView(R.layout.written_answer_activity);
         final Questionary questionary = Questionary.getQuestionary(this);
         Question currentQuestion = questionary.getCurrentQuestion();
         displayQuestion(currentQuestion.getQuestion());
-        displayChoices(currentQuestion.getChoices());
 
         //Set up the progress Bar progress
         ProgressBar quizProgressBar=(ProgressBar)findViewById(R.id.determinateBar);
@@ -40,31 +31,31 @@ public class RadioAnswerActivity extends AppCompatActivity {
         int currentNumberQuestion = questionary.getNumberCurrentQuestion();
         quizProgress.setText(currentNumberQuestion + "/" + totalQuestions);
 
+
+        // Create an event listener for the next button
         Button nextButton = (Button) findViewById(R.id.nextButton);
+
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-            /* Get the Answers from the user */
-                int[] radioButtonsIds = {R.id.choices1_textview, R.id.choices2_textview, R.id.choices3_textview, R.id.choices4_textview};
-                ArrayList<String> userAnswer = new ArrayList<>();
-                for (int i = 0; i < radioButtonsIds.length; i++) {
-                    RadioButton answerText = (RadioButton) findViewById(radioButtonsIds[i]);
-                    if (answerText.isChecked()) {
-                        userAnswer.add(answerText.getText().toString());
-                    }
-                }
-                //Check the Answer before going to the next Question
-                questionary.checkAnswer(userAnswer.toArray(new String[0]));
+                /* Get the Answers from the user */
+
+                EditText userAnswers = (EditText)findViewById(R.id.user_text_input);
+                String userAnswer =  userAnswers.getText().toString();
+
+                ////Check the Answer before going to the next Question
+                questionary.checkAnswer(userAnswer);
                 Question nextQuestion = questionary.getNextQuestion();
                 Intent nextIntent;
                 if(nextQuestion == null){
-                    nextIntent = new Intent(RadioAnswerActivity.this, FinalActivity.class);
+                    nextIntent = new Intent(WrittenAnswerActivity.this, FinalActivity.class);
                 } else {
-                    nextIntent = new Intent(RadioAnswerActivity.this, nextQuestion.getActivity());
+                    nextIntent = new Intent(WrittenAnswerActivity.this, nextQuestion.getActivity());
                 }
                 startActivity(nextIntent);
                 finish();
+
             }
         });
     }
@@ -75,15 +66,5 @@ public class RadioAnswerActivity extends AppCompatActivity {
     public void displayQuestion(String question) {
         TextView questionView = (TextView) findViewById(R.id.questionTextView);
         questionView.setText(question);
-    }
-    /**
-     * Displays the given Choices.
-     */
-    public void displayChoices(String[] choices){
-        int[] answerIds = {R.id.choices1_textview, R.id.choices2_textview, R.id.choices3_textview, R.id.choices4_textview};
-        for(int i = 0; i < choices.length; i++){
-            TextView answerView = (TextView) findViewById(answerIds[i]);
-            answerView.setText(choices[i]);
-        }
     }
 }

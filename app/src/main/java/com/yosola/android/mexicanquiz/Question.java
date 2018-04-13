@@ -1,4 +1,4 @@
-package com.example.android.mexicanquiz;
+package com.yosola.android.mexicanquiz;
 
 import java.text.Normalizer;
 

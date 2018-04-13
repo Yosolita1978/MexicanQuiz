@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@drawable/picadopaper"
     android:layout_centerHorizontal="true"
-    tools:context="com.example.android.mexicanquiz.FinalActivity">
+    tools:context="com.yosola.android.mexicanquiz.FinalActivity">
 
 
     <RelativeLayout

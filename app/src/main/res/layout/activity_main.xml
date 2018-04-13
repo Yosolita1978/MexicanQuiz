@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@drawable/mainmenuall"
-    tools:context="com.example.android.mexicanquiz.MainActivity">
+    tools:context="com.yosola.android.mexicanquiz.MainActivity">
 
 
     <RelativeLayout
